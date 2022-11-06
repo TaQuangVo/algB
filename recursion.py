@@ -4,11 +4,11 @@ factorial
 f(n) = n * f(n-1)
 f(1) = 1
 
-using recursive
+Recursive
 time: O(n)
 mem: O(n)
 
-using whileloop
+Iterative
 time: O(n)
 mem: O(1)
 
@@ -45,11 +45,11 @@ f(n) = f(n-1) + f(n-2)
 f(1) = 1
 f(0) = 0
 
-using recursive
+Recursive
 time: O(2^n)
 mem: O(2^n)
 
-using whileloop
+Iterative
 time: O(n)
 mem: O(1)
 
