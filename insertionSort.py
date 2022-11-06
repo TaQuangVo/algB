@@ -1,5 +1,7 @@
 """
 Insertion sort
+time: O(n^2)
+mem: O(1)
 """
 
 def insertionSort(arr):
