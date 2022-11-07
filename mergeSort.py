@@ -46,7 +46,9 @@ def mergeSort(arr, s, e):
 
     return arr
 
+def sort(arr):
+    return mergeSort(arr,0, len(arr)-1)
 
 arr = [1,9,2,6,3,5,14,7,1,2]
-sortedArr = mergeSort(arr, 0, len(arr)-1)
+sortedArr = sort(arr)
 print(sortedArr)

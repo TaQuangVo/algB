@@ -7,7 +7,6 @@ time: O(nlogn)
 mem: O(1)
 """
 
-
 def swap(arr, i, j):
     temp = arr[i]
     arr[i] = arr[j]
@@ -37,8 +36,10 @@ def quickSort(arr, s, e):
 
     return arr
 
+def sort(arr):
+    return quickSort(arr, 0, len(arr)-1)
 
 
 arr = [9,2,6,1,5,3,7,0,8,6]
-sortedArr = quickSort(arr, 0, len(arr)-1)
+sortedArr = sort(arr)
 print(sortedArr)
