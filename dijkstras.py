@@ -53,14 +53,14 @@ def dijkstras(adj_graph, src, end):
     heap.push((src,0))
     while heap.length() > 0:
         n,w = heap.pop()
+        if n == end:
+            return w
         if n in min_cost:
             continue
         min_cost[n] = w
-        print(n)
         for n1,w1 in adj_graph[n]:
-            if n1 in min_cost:
-                continue
-            heap.push((n1,w+w1))
+            if n1 not in min_cost:
+                heap.push((n1,w+w1))
     return min_cost
         
 
@@ -79,6 +79,5 @@ edges = [
     
 ]
 adj_graph = build_adjacency_list(edges)
-min_const_list = dijkstras(adj_graph,"a","d")
-print(adj_graph)
-print(min_const_list)
+min_const = dijkstras(adj_graph,"a","f")
+print(min_const)

@@ -8,5 +8,5 @@ def gcd(a, b):
         return min(a,b)
     return gcd(min(a,b), r)
 
-d = gcd(19, 42)
+d = gcd(20, 42)
 print(d)
