@@ -15,7 +15,7 @@ class TrieNode:
         if i == len(word) - 1:
             return self.nodes[word[i]].end_word
         return self.nodes[word[i]].contain(word, i+1)
-        
+
 
 trie = TrieNode()
 
